@@ -140,6 +140,100 @@
 
     </style>
     
+    <style>
+
+           #topicbubble 
+            {
+            position: relative;
+            width: 500px;
+            height: 150px;
+            padding: 0px;
+            background: #cccccc;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            margin: 0 auto;
+            }
+
+            #topicbubble:after 
+            {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            border-color: transparent #cccccc;
+            display: block;
+            width: 0;
+            z-index: 1;
+            left: -15px;
+            top: 87px;
+            margin: 0 auto;
+            }
+    </style>
+
+       <style>
+
+           #postbubble 
+            {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            padding: 0px;
+            background: #cccccc;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            margin: 0 auto;
+            }
+
+            #postbubble:after 
+            {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            border-color: transparent #cccccc;
+            display: block;
+            width: 0;
+            z-index: 1;
+            left: -15px;
+            top: 87px;
+            margin: 0 auto;
+            }
+    </style>
+
+       <style>
+
+           #mainbubble 
+            {
+            position: relative;
+            width: 500px;
+            height: 170px;
+            padding: 0px;
+            background:  #00cc99;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            margin: 0 auto;
+            }
+
+            #mainbubble:after 
+            {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            border-color: transparent  #00cc99;
+            display: block;
+            width: 0;
+            z-index: 1;
+            left: -15px;
+            top: 87px;
+            margin: 0 auto;
+            }
+
+    </style>
+
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. --> 
     <!--[if gte mso 9]>
     <xml>
@@ -176,7 +270,7 @@
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
                 <tr>
                     <td style="padding: 0px 0; text-align: center">
-                        <img src="headertitle.jpg" aria-hidden="true" width="600" height="100" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                        <img src="nodebb_digest/headertitle.jpg" aria-hidden="true" width="600" height="100" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
                     </td>
                 </tr>
             </table>
@@ -188,7 +282,7 @@
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
                     <td bgcolor="#ffffff">
-                        <img src="nodebbheader.jpg" aria-hidden="true" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="g-img">
+                        <img src="nodebb_digest/nodebbheader.jpg" aria-hidden="true" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="g-img">
                     </td>
                 </tr>
                 <!-- Hero Image, Flush : END -->
@@ -199,8 +293,16 @@
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #333333; font-weight: normal;">Popular Topics</h1>
-                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
+                                    <h1 style="margin: auto 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Popular Topics</h1>
+                                    <p id="topicbubble">
+
+                                    fasnfasiofas </p>
+
+                                    <br> </br>
+
+                                    <p id="topicbubble"> fasnfasiofas </p>
+
+
                                 </td>
                             </tr>
                             <tr>
@@ -209,7 +311,7 @@
                                     <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
                                         <tr>
                                             <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
-                                                <a href="http://www.google.com" style="background: #222222; border: 15px solid #222222; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a">
+                                                <a href="http://www.google.com" style="background: #00e673; border: 15px solid #00e673; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a">
                                                     <span style="color:#ffffff;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;A Button&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                                 </a>
                                             </td>
@@ -220,7 +322,7 @@
                             </tr>
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 21px; color: #333333; font-weight: bold;">Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</h2>
+                                    <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Popular Posts</h1>
                                     <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
                                 </td>
                             </tr>
@@ -238,21 +340,22 @@
                                     <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                         <tr>
                                             <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" aria-hidden="true" width="200" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                                   <p id="postbubble">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                            <td style="text-align: center; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
                                                 <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.</p>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
+
                                 <td align="center" valign="top" width="50%">
                                     <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                         <tr>
                                             <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" aria-hidden="true" width="200" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                                   <p id="postbubble">
                                             </td>
                                         </tr>
                                         <tr>
@@ -268,13 +371,6 @@
                 </tr>
                 <!-- Two Even Columns : END -->
 
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                    <td height="40" style="font-size: 0; line-height: 0;">
-                        &nbsp;
-                    </td>
-                </tr>
-                <!-- Clear Spacer : END -->
 
                 <!-- 1 Column Text : BEGIN -->
                 <tr>
@@ -282,7 +378,9 @@
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
+                                <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Topic of the Week</h1>
+                                   <p id="mainbubble">
+
                                 </td>
                                 </tr>
                         </table>
