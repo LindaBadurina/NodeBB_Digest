@@ -141,7 +141,6 @@
     </style>
     
     <style>
-
            #topicbubble 
             {
             position: relative;
@@ -151,7 +150,7 @@
             background: #cccccc;
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
-            border-radius: 30px;
+            border-radius: 10px;
             margin: 0 auto;
             }
 
@@ -169,6 +168,38 @@
             top: 87px;
             margin: 0 auto;
             }
+
+    </style>
+
+    <style>
+            #topicbubbleright 
+            {
+            position: relative;
+            width: 500px;
+            height: 150px;
+            padding: 0px;
+            background: #cccccc;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 10px;
+            margin: 0 auto;
+            }
+
+            #topicbubbleright:after 
+            {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 0px 15px 15px;
+            border-color: transparent #cccccc;
+            display: block;
+            width: 0;
+            z-index: 1;
+            right: -15px;
+            top: 87px;
+            margin: 0 auto;
+            }
+          
     </style>
 
        <style>
@@ -182,7 +213,7 @@
             background: #cccccc;
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
-            border-radius: 30px;
+            border-radius: 10px;
             margin: 0 auto;
             }
 
@@ -200,7 +231,41 @@
             top: 87px;
             margin: 0 auto;
             }
+
     </style>
+
+         <style>
+
+           #postbubbleright 
+            {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            padding: 0px;
+            background: #cccccc;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 10px;
+            margin: 0 auto;
+            }
+
+            #postbubbleright:after 
+            {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 0px 15px 15px;
+            border-color: transparent #cccccc;
+            display: block;
+            width: 0;
+            z-index: 1;
+            right: -15px;
+            top: 87px;
+            margin: 0 auto;
+            }
+
+    </style>
+
 
        <style>
 
@@ -213,7 +278,7 @@
             background:  #00cc99;
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
-            border-radius: 30px;
+            border-radius: 10px;
             margin: 0 auto;
             }
 
@@ -222,12 +287,12 @@
             content: '';
             position: absolute;
             border-style: solid;
-            border-width: 15px 15px 15px 0;
+            border-width: 15px 0px 15px 15px;
             border-color: transparent  #00cc99;
             display: block;
             width: 0;
             z-index: 1;
-            left: -15px;
+            right: -15px;
             top: 87px;
             margin: 0 auto;
             }
@@ -270,7 +335,7 @@
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
                 <tr>
                     <td style="padding: 0px 0; text-align: center">
-                        <img src="nodebb_digest/headertitle.jpg" aria-hidden="true" width="600" height="100" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                        <img src="images/headertitle.jpg" aria-hidden="true" width="600" height="100" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
                     </td>
                 </tr>
             </table>
@@ -282,7 +347,7 @@
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
                     <td bgcolor="#ffffff">
-                        <img src="nodebb_digest/nodebbheader.jpg" aria-hidden="true" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="g-img">
+                        <img src="images/NodeBBHeader.jpg" aria-hidden="true" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="g-img">
                     </td>
                 </tr>
                 <!-- Hero Image, Flush : END -->
@@ -293,14 +358,17 @@
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h1 style="margin: auto 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Popular Topics</h1>
-                                    <p id="topicbubble">
+                                    <h1 style="margin: auto 0; font-family: sans-serif; font-size: 32px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Popular Topics</h1>
 
-                                    fasnfasiofas </p>
+                                    <br></br>
+                                    
+                                    <div id="topicbubble">
+                                        <img src="images/socialicon.png" width="20%" style="margin-top: 25px; margin-left: 10px; "> </div>
 
                                     <br> </br>
 
-                                    <p id="topicbubble"> fasnfasiofas </p>
+                                    <div id="topicbubbleright">
+                                    <img src="images/socialicon.png" width="20%" style="margin-top: 25px; float: right; margin:20px 10px 0 0; "> </div>
 
 
                                 </td>
@@ -322,8 +390,8 @@
                             </tr>
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Popular Posts</h1>
-                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
+                                    <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 32px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Popular Posts</h1>
+                                    <p style="margin: 0;"></p>
                                 </td>
                             </tr>
                         </table>
@@ -340,12 +408,14 @@
                                     <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                         <tr>
                                             <td style="text-align: center; padding: 0 10px;">
-                                                   <p id="postbubble">
+                                                    <div id="postbubble">
+                                                    <img src="images/socialicon.png" width="30%" style="margin-top: 15px; margin-left: -100px; "> 
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.</p>
+                                                <p style="margin: 0;"></p>
                                             </td>
                                         </tr>
                                     </table>
@@ -355,12 +425,14 @@
                                     <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
                                         <tr>
                                             <td style="text-align: center; padding: 0 10px;">
-                                                   <p id="postbubble">
+                                                    <div id="postbubbleright">
+                                                    <img src="images/socialicon.png" width="30%" style="margin-top: 25px; float: right; margin:13px 20px 0 0; "> 
+                                                    </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center;font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.</p>
+                                                <p style="margin: 0;"></p>
                                             </td>
                                         </tr>
                                     </table>
@@ -378,8 +450,11 @@
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 24px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Topic of the Week</h1>
-                                   <p id="mainbubble">
+                                <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 32px; line-height: 27px; color: #8c8c8c; font-weight: normal; text-align: center;">Topic of the Week</h1>
+                                   
+                                    <div id="mainbubble">
+                                    <img src="images/socialicon.png" width="20%" style="margin-top: 25px; margin-left: 10px; "> </div>
+
 
                                 </td>
                                 </tr>
